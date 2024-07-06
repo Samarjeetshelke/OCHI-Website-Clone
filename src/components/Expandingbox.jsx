@@ -17,9 +17,9 @@ const ExpandingBox = () => {
     <div className='mt-3'>
       {isVisible && (
         <motion.div
-          initial={{ width: 0 }}
+          initial={{ width: 0.5 }}
           animate={{ width: '10vw' }}
-          transition={{ duration: 3 ,ease:'easeOut'}} // Adjust the duration as needed
+          transition={{ duration: 1 ,ease:'easeInOut'}} // Adjust the duration as needed
           style={{
             height: '6vw',
             backgroundImage:`url(${bimage})`,
